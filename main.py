@@ -11,9 +11,9 @@ location_input = input("Enter the location (city or suburbs): ").lower()
 
 if location_input == 'city':
     price_per_sqft = 250 * property_size_input
-    print(price_per_sqft)
+    print('${:,.2f}'.format(price_per_sqft)) # format function turns values to string following formatting instructions
 elif location_input == 'suburbs':
     price_per_sqft = 150 * property_size_input
-    print(price_per_sqft)
+    print('${:,.2f}'.format(price_per_sqft))
 else:
     print("Please enter suburbs or city")
